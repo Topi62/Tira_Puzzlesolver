@@ -42,8 +42,9 @@ public class Main {
         System.out.println("");
         System.out.println("Anna luku, montako numeroa vaihdetaan:");
         int temp = scanner.nextInt();
-        for ( int i = 0; i < 2; i++) {
-            first.suffle(temp);
+        first.suffle(temp);
+        do {
+            
             if (first.check()) {
                 System.out.println("Puzzle on edelleen järjestyksessä");
                 System.out.println("manhattan etäisyys: " + first.manhattan() + "\n");
@@ -54,9 +55,10 @@ public class Main {
                 System.out.println(first);
                 System.out.println("jos vaihdetaan parillinen määrä yhteensä");
                 System.out.println("on puzzle ratkaistavissa, anna uusi luku, montako vaihdetaan:");
-                temp = scanner.nextInt();        
+                temp = scanner.nextInt();  
+                first.suffle(temp);
             }
-        }
+        } while (!first.solvable());
         
        
        System.out.println("Ratkaistaan algoritmilla A-star...odota");

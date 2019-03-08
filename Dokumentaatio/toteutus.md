@@ -15,7 +15,13 @@ Hakujen tehostusta ei ehditty tehdä kurssin puitteissa. Olisi kiva lukea toisen
 
 ## Ohjelman syötteet
 
-Ohjelma etenee pyytämällä käyttäjältä kokonaislukuja. 
+Ohjelma etenee pyytämällä käyttäjältä kokonaislukuja. Ensin järjestyksessä oleva 4x4 puzzle ja pyydetään käyttäjältä montako vaihtoa tehdään. 
+Mikäli käyttäjä antoi parittoman numeron,  pyydetään toinen luku antamalla lisäohje, että puzzle on ratkaistavissa vain, jos vaihtoja tehdään parillinen määrä.
+Pyyntöä toistetaan kunnes käyttäjä on antanut yhteensä parillisen määrän vaihtoja.
+
+A* ratkaisun jälkeen käyttäjältä pyydetään testattavan puzzlen sivun pituus, varoittaen, että isot puzzlet kestävät kauan ja vievät paljon muistia.
+
+Ratkaisujen tulostuksen jälkeen ohjelma päättyy.
 
 ## Aika ja tilavaativuudet
 
